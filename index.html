@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=0.0.1">
 </head>
 <body>
 
@@ -41,8 +41,8 @@
             program they used to make their own. Although I spent most of my childhood with sparse computer access, 
             I majored in computer science, and then when I started coding professionally I fell in love with the craft itself.
             I saw it as so much wider than video games. After all, my first company was a cybersecurity firm, and the second in healthcare, 
-            and I'm excited to see what else is out there! Currently I am working on an Android app to track, categorize, and get jokes to tell 
-            from.</p>
+            and I'm excited to see what else is out there!</p>
+            <p>Currently I am working on an Android app to track, categorize, and get jokes to tell from.</p>
             
         </div>
     </section>
@@ -55,24 +55,28 @@
         <div class="project-content">
             <div class="project-description">
                 <h3>Jokes on the Go</h3>
-                <p>This project was mainly started in order to pratice my Golang and really learn Kotlin. It's mostly an excuse, but I love to tell corny dad-type jokes and struggle to keep track of which ones I've told to whom. So, I'll build an app for that. </p>
-                <h4>Hightlights</h4>
+                <p>This project was mainly started in order to pratice my UI skills, Golang and really learn Kotlin. 
+                It's mostly an excuse, but I love to tell corny dad-type jokes and struggle to keep track of which ones I've told to whom. So, I'll build an app for that. </p>
+                <h4>Hightlights / What's working so far</h4>
                 <ul>
                     <li>Uses gRPC to communicate between client and server</li>
                     <li>gRPC stubs published automatically on tag in Github Actions, downloaded in separate Android repo</li>
                     <li>Jetpack Compose provides the UI, although it doesn't do much yet</li>
+                    <li>Server and client use tls and client is authenticated with an API key</li>
                 </ul>
                 <h4>Planned features</h4>
                 <ul>
                     <li>Host server on real publically accessible domain name</li>
-                    <li>Use postgres to implement tagging and audience tracking</li>
-                    <li>Add API key feature to Android app</li>
+                    <li>Use a real certificate authority to avoid self-signed cert scripting</li>
+                    <li>Use postgres to store a lot of jokes</li>
+                    <li>Implement tagging and audience tracking</li>
+                    <li>Add "Add API key" feature to Android app</li>
                     <li>Publish android APK for easy install</li>
                     <li>Build a more functional and visually pleasing UI</li>
                 </ul>
             </div>
             <div class="project-image">
-                <img src="path/to/project-image.jpg" alt="Project in Action">
+                <img src="path/to/project-image.jpg" alt="TODO: Project in Action">
             </div>
         </div>
     </section>
