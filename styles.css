@@ -1,19 +1,8 @@
-/* Border box reset */
+/* Reset some basic styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-header {
-    background: #4d92a7;
-    color: #fdedda;
-    padding: 20px 40px;
-    text-align: center;
-}
-
-#under-construction {
-    color: rgb(0, 255, 21)
 }
 
 body {
@@ -21,9 +10,177 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    padding: 20px;
+    margin: 0; /* Remove margin from body */
+    padding: 0; /* Remove padding from body */
+    transition: background-color 0.3s, color 0.3s;
 }
 
-main {
+/* Full-width top bar with border */
+.top-bar {
+    background-color: #005f8d;
+    padding: 10px 20px;
+    border-bottom: 2px solid #003f5c;
+    color: #fff;
+    text-align: left;
+    width: 100vw; /* Ensure it covers the full viewport width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+    margin: 0;
+    font-size: 24px;
+}
+
+.profile-header-section {
+    text-align: center;
     margin: 20px 0;
+    padding: 0 20px; /* Add padding to keep the content aligned */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.trade-title {
+    font-size: 20px;
+    color: #005f8d;
+    margin-bottom: 10px;
+}
+
+.contact-icons {
+    margin: 15px 0;
+}
+
+.icon-link img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icon-link img:hover {
+    transform: scale(1.1);
+}
+
+.intro-text {
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    padding: 0 20px; /* Add padding to keep the content aligned */
+}
+
+/* Full-width section bar with border */
+.section-bar {
+    background-color: #005f8d;
+    padding: 10px 20px;
+    border-bottom: 2px solid #003f5c;
+    color: #fff;
+    text-align: left;
+    width: 100vw; /* Ensure it covers the full viewport width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.section-bar h2 {
+    font-size: 22px;
+}
+
+.project-section {
+    margin: 40px 0;
+}
+
+.project-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Add padding to keep the content aligned */
+}
+
+.project-description {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.project-description h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #005f8d;
+}
+
+.project-description p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.project-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Light theme styles (default) */
+h3 {
+    font-size: 20px;
+    color: #005f8d;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    color: #555; /* This color is for light theme */
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #2c2c2c;
+        color: #ddd; /* Brighter text color for general content */
+    }
+    
+    .top-bar, .section-bar {
+        background-color: #007acc;
+        border-bottom-color: #005f8d;
+    }
+
+    .name, .section-bar h2 {
+        color: #fff;
+    }
+
+    .trade-title {
+        color: #88c0d0; /* Slightly softer blue for dark mode */
+    }
+
+    .intro-text {
+        color: #ddd; /* Brighter text color for better readability */
+    }
+
+    .project-description h3 {
+        color: #88c0d0; /* Softer blue to match the theme */
+    }
+
+    .project-description p {
+        color: #ccc; /* Slightly darker than the main text for contrast */
+    }
+
+    ul li {
+        color: #ddd; /* Matches the general content text color */
+    }
+
+    .project-image img {
+        box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    }
 }
