@@ -192,6 +192,7 @@ body {
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow to lift the text block */
     color: #333; /* Text color */
+    z-index: 3; /* Needs to be in front of both the backer and the gif */
 }
 
 .demo-description p {
