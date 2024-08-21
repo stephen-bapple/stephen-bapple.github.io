@@ -51,6 +51,12 @@ body {
     margin-bottom: 10px;
 }
 
+.profile-name {
+    font-size: 30px;
+    color: #005f8d;
+    margin-bottom: 0px;
+}
+
 .contact-icons {
     margin: 8px 0;
 }
@@ -66,6 +72,22 @@ body {
 .icon-link:hover {
     transform: scale(1.1);
     color: #007acc; /* Change the icon color on hover */
+}
+
+.download-resume {
+    display: inline-block;
+    padding: 0px 8px;
+    margin: 8px 0;
+    background-color: #007acc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-resume:hover {
+    background-color: #005f8d;
 }
 
 .intro-text {
@@ -225,6 +247,10 @@ ul li {
         color: #88c0d0; /* Slightly softer blue for dark mode */
     }
 
+    .profile-name {
+        color: #88c0d0;
+    }
+    
     .intro-text {
         color: #ddd; /* Brighter text color for better readability */
     }
