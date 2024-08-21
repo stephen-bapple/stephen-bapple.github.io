@@ -38,9 +38,9 @@ body {
 }
 
 .profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    border-radius: 30%;
+    width: 175px;
+    height: 230px;
     object-fit: cover;
     margin-bottom: 15px;
 }
@@ -98,6 +98,10 @@ body {
     padding: 0 20px; /* Add padding to keep the content aligned */
 }
 
+.intro-text p {
+    margin-bottom: 20px;
+}
+
 /* Full-width section bar with border */
 .section-bar {
     background-color: #005f8d;
@@ -144,7 +148,7 @@ body {
 
 .project-image {
     position: relative;
-    max-width: 700px; /* Limits the maximum width of the image */
+    max-width: 800px; /* Limits the maximum width of the image */
     flex: 1; /* Make the image container take up equal space as the description */
     display: flex; /* Allows centering the image inside the container */
     justify-content: center; /* Center the image horizontally */
@@ -216,6 +220,48 @@ ul li {
     color: #555; /* This color is for light theme */
 }
 
+.repo-list {
+    list-style: none; /* Removes default bullets */
+    padding-left: 0; /* Removes default padding */
+    margin: 0 0;
+}
+
+.repo-list li {
+    margin-bottom: 8px; /* Adds space between list items */
+}
+
+.repo-link {
+    color: #007acc; /* Link color that matches your theme */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size */
+    display: flex; /* Align icon and text nicely */
+    align-items: center; /* Vertically center icon and text */
+}
+
+.repo-link i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 20px; /* Slightly larger icon */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.repo-link:hover {
+    color: #005f8d; /* Darken the color on hover */
+}
+
+.repo-link:hover i {
+    color: #005f8d; /* Ensure icon color changes with text */
+}
+
+.site-footer {
+    background-color: #005f8d; /* Match the background color of your top bar or section bars */
+    color: #fff; /* Text color */
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #003f5c; /* Border to match the section bars */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top */
+}
+
+
 /* Responsive design adjustments */
 @media (max-width: 768px) {
     .project-content {
@@ -283,5 +329,16 @@ ul li {
     
     .icon-link:hover {
         color: #88c0d0; /* Softer color on hover in dark mode */
+    }
+    .repo-link {
+        color: #88c0d0; /* Softer color for dark mode */
+    }
+
+    .repo-link:hover {
+        color: #006ba1; /* Slightly darker hover color in dark mode */
+    }
+    .site-footer {
+        background-color: #007acc; /* Slightly lighter blue for dark mode */
+        border-top-color: #005f8d;
     }
 }

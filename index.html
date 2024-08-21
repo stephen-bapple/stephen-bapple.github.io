@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css?v=0.0.4">
+    <link rel="stylesheet" href="styles.css?v=0.0.5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
     <!-- Profile Section -->
     <section class="profile-section">
         <section class="profile-header-section">
-            <img src="stevesquare.jpg" alt="Profile Picture" class="profile-pic">
+            <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
             <h2 class="profile-name">Stephen Bapple</h2>
             <h3 class="trade-title">Software Engineer</h3>
             <div class="contact-icons">
@@ -32,19 +32,35 @@
         <div class="intro-text">
             <p>I am a software engineer with over 4 years of experience developing software.</p>
 
-            <p> My experience has primarily been in the backend. I have also done extensive e2e automation and tooling work, as well as a good helping of infrastructure/devOps, with UI/frontend as needed.</p>
+            <p>
+                I've spent the bulk of my career working on backends powering core business functions
+                in addition to doing extensive work automating both e2e and integration tests, 
+                even going so far as to build out new tools and frameworks in order to enable these efforts. 
+                This has naturally included a lot of infrastructure and developer tooling work, pushing me closer to the devOps wheelhouse
+                 than many backend engineers, but I have also worked with UI/frontend as needed and consider myself a generalist; 
+                 I pick up tools as I need them and go where I am needed.
+            </p>
             
-            <p>That said, I consider myself a generalist, which to me means that I pick up tools as I need them and go where I am needed. I am more focused on the product that is built than the tools that build it, I feel most fulfilled when building stuff that people can actually use and enjoy.</p>
+            <p>
+                I started my career as a test engineer in a context-driven style shop, 
+                poking around and experimenting with software (whether that was with code or mouse pointer)
+                and the experience greatly influenced my understanding of quality. 
+                It's not the number of bugs or how quirky a UI element is; 
+                but whether the top needs of the business are being met and the stakeholders find the product valuable. 
+            </p>
             
-            <p>I got my career started as a test engineer, poking around and messing with software, and used that curiosity to make myself an expert on the product and power all my engineering efforts from then onwards. </p>
+            <p>
+                My passion for tech in general started similarly; 
+                as a small child I watched my older siblings play old DOS games as well as create their own small ones. 
+                I became absolutely fascinated with how these old games worked, the bugs and glitches, 
+                as well as a program they used to make their own. Although I spent most of my childhood with sparse computer access, 
+                I majored in computer science, and then when I started coding professionally I fell in love with the craft itself. 
+                I saw it as so much wider than video games, to me software is the great enabler, whether you want to tell a 
+                story, solve a business process issue, or connect with people across the world, software can make it possible.
+                
+                After all, my first company was a cybersecurity firm, and the second in healthcare, and I'm excited to see what else is out there!
+            </p>
             
-            <p>My passion for tech in general started similarly; 
-            as a small child I watched my older siblings play old DOS games as well as create their own small ones. 
-            I became absolutely fascinated with how these old games worked, the bugs and glitches, as well as the 
-            program they used to make their own. Although I spent most of my childhood with sparse computer access, 
-            I majored in computer science, and then when I started coding professionally I fell in love with the craft itself.
-            I saw it as so much wider than video games. After all, my first company was a cybersecurity firm, and the second in healthcare, 
-            and I'm excited to see what else is out there!</p>
             <p>Currently I am working on an Android app to track, categorize, and get jokes to tell from.</p>
             
         </div>
@@ -58,9 +74,14 @@
         <div class="project-content">
             <div class="project-description">
                 <h3>Jokes on the Go</h3>
-                <p>This project was mainly started in order to pratice my UI skills, Golang and really learn Kotlin. 
+                <p>This project was mainly started in order to practice both my UI skills and Golang as well as really learn Kotlin. 
                 It's mostly an excuse, but I love to tell corny dad-type jokes and struggle to keep track of which ones I've told to whom. So, I'll build an app for that. </p>
-                <h4>Hightlights / What's working so far</h4>
+                <p>Right now the app and server are both very barebones. 
+                I chose to get the connection working first so in order to prove out all relevant technologies. 
+                In the past I've encountered difficulties getting gRPC or imitators to work with certain tech stacks, and changing API technology can be painful, so I wanted to remove that risk.
+                I particularly love this pattern for development as stubbing out server responses
+                 is a great way to parallelize development work.</p>
+                <h4>Highlights / What's working so far</h4>
                 <ul>
                     <li>Uses gRPC to communicate between client and server</li>
                     <li>gRPC stubs published automatically on tag in Github Actions, downloaded in separate Android repo</li>
@@ -76,7 +97,20 @@
                     <li>Add "Add API key" feature to Android app</li>
                     <li>Publish android APK for easy install</li>
                     <li>Build a more functional and visually pleasing UI</li>
-                    <li>...Potentially even more features once the app is fleshed out</li>
+                    <li>...Even more features as the app is fleshed out and the need arises</li>
+                </ul>
+                <h4>Source code</h4>
+                <ul class="repo-list">
+                    <li>
+                        <a href="https://github.com/stephen-bapple/jokes-on-the-go" target="_blank" class="repo-link">
+                            <i class="fab fa-github"></i> Jokes on the Go Server
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/stephen-bapple/jokes-on-the-go-client" target="_blank" class="repo-link">
+                            <i class="fab fa-github"></i> Jokes on the Go Android Client
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="project-image">
@@ -88,5 +122,6 @@
             </div>
         </div>
     </section>
+    <footer class="site-footer">
 </body>
 </html>
