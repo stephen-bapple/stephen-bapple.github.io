@@ -11,118 +11,121 @@
     <!-- Top Bar -->
     <header>
         <div class="top-bar">
-            <h1 class="name">Stephen Bapple</h1>
+            <h1 class="name">Developer Portfolio</h1>
         </div>
     </header>
 
     <!-- Profile Section -->
     <section class="profile-section">
-        <section class="profile-header-section">
-            <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
-            <h2 class="profile-name">Stephen Bapple</h2>
-            <h3 class="trade-title">Software Engineer</h3>
-            <div class="contact-icons">
-                <a href="https://github.com/stephen-bapple" class="icon-link" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/stephen-bapple/" class="icon-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:stephen.bapple@gmail.com" class="icon-link"><i class="fas fa-envelope"></i></a>
-            </div>
-            <h4>720-319-5698</h4>
-            <a href="resume.pdf" download="Stephen_Bapple_Resume.pdf" class="download-resume">Download Resume</a>
-        </section>
-        <div class="intro-text">
-            <p>I am a software engineer with over 4 years of experience developing software.</p>
-
-            <p>
-                I've spent the bulk of my career working on backends powering core business functions
-                in addition to doing extensive work automating both e2e and integration tests, 
-                even going so far as to build out new tools and frameworks in order to enable these efforts. 
-                This has naturally included a lot of infrastructure and developer tooling work, pushing me closer to the Ops wheelhouse
-                 than many backend engineers, but I have also worked with UI/frontend as needed and consider myself a generalist; 
-                 I pick up tools as I need them and go where I am needed.
-            </p>
-            
-            <p>
-                I started my career as a test engineer in a context-driven style shop, 
-                poking around and experimenting with software (whether that was with code or mouse pointer)
-                and the experience greatly influenced my understanding of quality. 
-                It's not the number of bugs or how quirky a UI element is; 
-                but whether the top needs of the business are being met and the stakeholders find the product valuable. 
-            </p>
-            
-            <p>
-                My passion for tech in general started similarly; 
-                as a small child I watched my older siblings play old DOS games as well as create their own small ones. 
-                I became absolutely fascinated with how these old games worked, the bugs and glitches, 
-                as well as a program they used to make their own. Although I spent most of my childhood with sparse computer access, 
-                I majored in computer science, and then when I started coding professionally I fell in love with the craft itself. 
-                I saw it as so much wider than video games, to me software is the great enabler, whether you want to tell a 
-                story, solve a business process issue, or connect with people across the world, software can make it possible.
+        <div class="container">
+            <section class="profile-header-section">
+                <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+                <h2 class="profile-name">Stephen Bapple</h2>
+                <h3 class="trade-title">Software Engineer</h3>
+                <div class="contact-icons">
+                    <a href="https://github.com/stephen-bapple" class="icon-link" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/stephen-bapple/" class="icon-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:stephen.bapple@gmail.com" class="icon-link"><i class="fas fa-envelope"></i></a>
+                </div>
+                <h4>720-319-5698</h4>
+                <a href="resume.pdf" download="Stephen_Bapple_Resume.pdf" class="download-resume">Download Resume</a>
+            </section>
+            <div class="intro-text">
+                <p>I am a software engineer with over 4 years of experience developing software.</p>
+    
+                <p>
+                    I've spent the bulk of my career working on backends powering core business functions
+                    in addition to doing extensive work automating both e2e and integration tests, 
+                    even going so far as to build out new tools and frameworks in order to enable these efforts. 
+                    This has naturally included a lot of infrastructure and developer tooling work, pushing me closer to the Ops wheelhouse
+                     than many backend engineers, but I have also worked with UI/frontend as needed and consider myself a generalist; 
+                     I pick up tools as I need them and go where I am needed.
+                </p>
                 
-                After all, my first company was a cybersecurity firm, and the second in healthcare, and I'm excited to see what else is out there!
-            </p>
-            
-            <p>Currently I am working on an Android app to track, categorize, and get jokes to tell from.</p>
-            
+                <p>
+                    I started my career as a test engineer in a context-driven style shop, 
+                    poking around and experimenting with software (whether that was with code or mouse pointer)
+                    and the experience greatly influenced my understanding of quality. 
+                    It's not the number of bugs or how quirky a UI element is; 
+                    but whether the top needs of the business are being met and the stakeholders find the product valuable. 
+                </p>
+                
+                <p>
+                    My passion for tech in general started similarly; 
+                    as a small child I watched my older siblings play old DOS games as well as create their own small ones. 
+                    I became absolutely fascinated with how these old games worked, the bugs and glitches, 
+                    as well as a program they used to make their own. Although I spent most of my childhood with sparse computer access, 
+                    I majored in computer science, and then when I started coding professionally I fell in love with the craft itself. 
+                    I saw it as so much wider than video games, to me software is the great enabler, whether you want to tell a 
+                    story, solve a business process issue, or connect with people across the world, software can make it possible.
+                    
+                    After all, my first company was a cybersecurity firm, and the second in healthcare, and I'm excited to see what else is out there!
+                </p>
+                
+                <p>Currently I am working on an Android app to track, categorize, and get jokes to tell from.</p>
+                
+            </div>
         </div>
     </section>
 
     <!-- Current Project Section -->
     <section class="project-section">
-        <div class="section-bar">
-            <h2>Current Project</h2>
-        </div>
-        <div class="project-content">
-            <div class="project-description">
-                <h3>Jokes on the Go</h3>
-                <p>This project was mainly started in order to practice both my UI skills and Golang as well as really learn Kotlin. 
-                It's mostly an excuse, but I love to tell corny dad-type jokes and struggle to keep track of which ones I've told to whom. So, I'll build an app for that. </p>
-                <p>Right now the app and server are both very barebones. 
-                I chose to get the connection working first so in order to prove out all relevant technologies. 
-                In the past I've encountered difficulties getting gRPC or imitators to work with certain tech stacks, and changing API technology can be painful, so I wanted to remove that risk.
-                I particularly love this pattern for development as stubbing out server responses
-                 is a great way to parallelize development work.</p>
-                <h4>Highlights / What's working so far</h4>
-                <ul>
-                    <li>Uses gRPC to communicate between client and server</li>
-                    <li>gRPC stubs are published automatically on tag in Github Actions, to be downloaded in separate Android repo</li>
-                    <li>Jetpack Compose provides the UI, although it doesn't do much yet</li>
-                    <li>Server is hosted on a Raspberry PI, with the gRPC API exposed at jokesonethego.com</li>
-                    <li>Server uses certbot/letsencrypt for TLS, and the client is authenticated with an API key</li>
-                    <li>Server is continually built and deployed via Github Actions, Webhooks, and systemd scripts</li>
-                </ul>
-                <h4>Planned features</h4>
-                <ul>
-                    <li>Use postgres to store a lot of jokes</li>
-                    <li>Implement tagging and audience tracking</li>
-                    <li>Add "Add API key" feature to Android app</li>
-                    <li>Publish android APK for easy install</li>
-                    <li>Build a more functional and visually pleasing UI</li>
-                    <li>...Even more features as the app is fleshed out and the need arises</li>
-                </ul>
-                <h4>Source code</h4>
-                <ul class="repo-list">
-                    <li>
-                        <a href="https://github.com/stephen-bapple/jokes-on-the-go" target="_blank" class="repo-link">
-                            <i class="fab fa-github"></i> Jokes on the Go Server
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/stephen-bapple/jokes-on-the-go-client" target="_blank" class="repo-link">
-                            <i class="fab fa-github"></i> Jokes on the Go Android Client
-                        </a>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="section-bar">
+                <h2>Current Project</h2>
             </div>
-            <div class="project-image">
-                <img src="./project-in-action.gif" alt="Android app and Server interacting">
-                <div class="demo-description">
-                    <p>This gif demonstrates the app running on my Samsung device and interacting with the Golang server, ran from WSL.
-                    <br><br>Note the intentional error at the start, where we make a request before the server is up</p>
+            <div class="project-content">
+                <div class="project-description">
+                    <h3>Jokes on the Go</h3>
+                    <p>This project was mainly started in order to practice both my UI skills and Golang as well as really learn Kotlin. 
+                    It's mostly an excuse, but I love to tell corny dad-type jokes and struggle to keep track of which ones I've told to whom. So, I'll build an app for that. </p>
+                    <p>Right now the app and server are both very barebones. 
+                    I chose to get the connection working first so in order to prove out all relevant technologies. 
+                    In the past I've encountered difficulties getting gRPC or imitators to work with certain tech stacks, and changing API technology can be painful, so I wanted to remove that risk.
+                    I particularly love this pattern for development as stubbing out server responses
+                     is a great way to parallelize development work.</p>
+                    <h4>Highlights / What's working so far</h4>
+                    <ul>
+                        <li>Uses gRPC to communicate between client and server</li>
+                        <li>gRPC stubs are published automatically on tag in Github Actions, to be downloaded in separate Android repo</li>
+                        <li>Jetpack Compose provides the UI, although it doesn't do much yet</li>
+                        <li>Server is hosted on a Raspberry PI, with the gRPC API exposed at jokesonethego.com</li>
+                        <li>Server uses certbot/letsencrypt for TLS, and the client is authenticated with an API key</li>
+                        <li>Server is continually built and deployed via Github Actions, a Webhook, and systemd wizardry</li>
+                    </ul>
+                    <h4>Planned features</h4>
+                    <ul>
+                        <li>Use postgres to store a lot of jokes</li>
+                        <li>Implement tagging and audience tracking</li>
+                        <li>Add "Add API key" feature to Android app</li>
+                        <li>Publish android APK for easy install</li>
+                        <li>Build a more functional and visually pleasing UI</li>
+                        <li>...Even more features as the app is fleshed out and the need arises</li>
+                    </ul>
+                    <h4>Source code</h4>
+                    <ul class="repo-list">
+                        <li>
+                            <a href="https://github.com/stephen-bapple/jokes-on-the-go" target="_blank" class="repo-link">
+                                <i class="fab fa-github"></i> Jokes on the Go Server
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/stephen-bapple/jokes-on-the-go-client" target="_blank" class="repo-link">
+                                <i class="fab fa-github"></i> Jokes on the Go Android Client
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-image">
+                    <img src="./project-in-action.gif" alt="Android app and Server interacting">
+                    <div class="demo-description">
+                        <p>This gif demonstrates the app running on my Samsung device and interacting with the Golang server, ran from WSL.
+                        <br><br>Note the intentional error at the start, where we make a request before the server is up</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="site-footer">
-    </footer>
+    <footer class="site-footer"><p>&copy; 2024 Stephen Bapple</p></footer>
 </body>
 </html>

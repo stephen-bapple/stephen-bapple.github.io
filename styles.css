@@ -31,6 +31,12 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.container {
+    max-width: 90%; /* Restrict content width to 80% */
+    margin: 0 auto; /* Center the content */
+    padding: 20px 0; /* Optional padding */
+}
+
 .name {
     margin: 0;
     font-size: 24px;
@@ -113,7 +119,7 @@ body {
     padding: 10px 20px;
     border-bottom: 2px solid #003f5c;
     color: #fff;
-    text-align: left;
+    text-align: center;
     width: 100%; /* Use 100% instead of 100vw to avoid overflow */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -267,7 +273,7 @@ ul li {
 }
 
 /* Responsive design adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .project-content {
         flex-direction: column; /* Stacks description and image on smaller screens */
     }
