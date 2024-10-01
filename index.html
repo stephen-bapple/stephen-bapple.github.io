@@ -105,15 +105,15 @@
                             is a great way to parallelize development work.</p>
                         <h4>Highlights / What's working so far</h4>
                         <ul>
-                            <li>Uses gRPC to communicate between client and server</li>
-                            <li>gRPC stubs are published automatically on tag in Github Actions, to be downloaded in
-                                separate Android repo</li>
-                            <li>Jetpack Compose provides the UI, although it doesn't do much yet</li>
-                            <li>Server is hosted on a Raspberry PI, with the gRPC API exposed at jokesonethego.com</li>
+                            <li>Server is hosted on a Raspberry PI, with a gRPC API exposed at jokesonethego.com</li>
+                            <li>Server auto restarts on crashes or power outages</li>
+                            <li>gRPC stubs are published automatically on tag in Github Actions, to be downloaded in a
+                                separate Android client repo</li>
                             <li>Server uses certbot/letsencrypt for TLS, and the client is authenticated with an API key
                             </li>
-                            <li>Server is continually built and deployed via Github Actions, a webhook, and systemd
+                            <li>Server is updated on push via a CI/CD system consisting of Github Actions, a webhook, and systemd
                                 wizardry</li>
+                            <li>Jetpack Compose provides the UI, although it doesn't do much yet</li>
                         </ul>
                         <h4>Planned features</h4>
                         <ul>
