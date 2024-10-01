@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* Prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -22,7 +27,7 @@ body {
     border-bottom: 2px solid #003f5c;
     color: #fff;
     text-align: left;
-    width: 100vw; /* Ensure it covers the full viewport width */
+    width: 100%; /* Use 100% instead of 100vw to avoid overflow */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -109,7 +114,7 @@ body {
     border-bottom: 2px solid #003f5c;
     color: #fff;
     text-align: left;
-    width: 100vw; /* Ensure it covers the full viewport width */
+    width: 100%; /* Use 100% instead of 100vw to avoid overflow */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
@@ -177,7 +182,6 @@ body {
     border-radius: 8px;
     z-index: 1; /* Make sure it is beneath the GIF */
 }
-
 
 /* Text block positioned in the empty space of the L-shaped GIF */
 .demo-description {
@@ -262,7 +266,6 @@ ul li {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow at the top */
 }
 
-
 /* Responsive design adjustments */
 @media (max-width: 768px) {
     .project-content {
@@ -331,6 +334,7 @@ ul li {
     .icon-link:hover {
         color: #88c0d0; /* Softer color on hover in dark mode */
     }
+
     .repo-link {
         color: #88c0d0; /* Softer color for dark mode */
     }
@@ -338,6 +342,7 @@ ul li {
     .repo-link:hover {
         color: #006ba1; /* Slightly darker hover color in dark mode */
     }
+
     .site-footer {
         background-color: #007acc; /* Slightly lighter blue for dark mode */
         border-top-color: #005f8d;
